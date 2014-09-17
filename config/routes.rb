@@ -1,5 +1,21 @@
 Rails.application.routes.draw do
 
+  get 'badges/cornered'
+  get 'badges/basic'
+  get 'breadcrumbs/styled'
+  get 'breadcrumbs/basic'
+  get 'navbars/sidebottom'
+  get 'navbars/offcanvas'
+  get 'navbars/affixed'
+  get 'navbars/sidebar'
+  get 'pagination/spaced_styled'
+  get 'pagination/basic'
+  get 'carousel/controls'
+  get 'carousel/full_width'
+  get 'carousel/basic'
+  get 'dropdowns/rounded_arrow'
+  get 'dropdowns/rounded'
+  get 'dropdowns/basic'
   get 'navbars/fixed'
   root 'setup#index'
 end
