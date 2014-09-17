@@ -1,15 +1,29 @@
 !!! 5
 %html.no-js
-  = render 'head'
+  %head
+    %meta{ :charset => 'utf-8' }/
+    %meta{ 'http-equiv' => 'X-UA-Compatible', :content => 'IE=edge,chrome=1' }/
+
+    = display_meta_tags :site => 'Seed Site', :title => page_title, :reverse => true
+
+    %meta{ :name => 'description', :content => '' }/
+    %meta{ :name => 'viewport', :content => 'width=device-width' }/
+
+    = yield :stylesheets
+    = stylesheet_link_tag "#{controller_name}/#{action_name}", :media => nil
+    = javascript_include_tag 'modernizr'
+
+    = csrf_meta_tag
 
   %body{ :class => "#{ controller.controller_name }" }
     = render 'chromeframe'
-    = render 'header'
     = render 'flashes'
 
     = yield
 
-    = render 'footer'
-
     -# Javascript at the bottom for fast page loading
-    = render 'javascripts'
+    = javascript_include_tag 'application'
+
+    -#  Append your own using content_for :javascripts
+    = yield :javascripts
+
