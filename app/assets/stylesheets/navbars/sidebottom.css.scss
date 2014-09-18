@@ -3,12 +3,12 @@
 
 .content {
   @extend .col-sm-10;
-  @extend .col-sm-push-2;
+  // @extend .col-sm-push-2;
 }
 
 .sidebottom {
   @extend .col-sm-2;
-  @extend .col-sm-pull-10;
+  // @extend .col-sm-pull-10;
 
   li {
     text-align: center;
