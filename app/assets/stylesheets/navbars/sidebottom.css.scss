@@ -3,19 +3,14 @@
 
 .content {
   @extend .col-sm-10;
-  // @extend .col-sm-push-2;
 }
 
 .sidebottom {
   @extend .col-sm-2;
-  // @extend .col-sm-pull-10;
 
   li {
     text-align: center;
-  }
-
-  @media (min-width: $screen-sm-min) {
-    li a {
+    a {
       font-size: 18px;
       span {
         font-size: 45px;
@@ -34,10 +29,12 @@
     li {
       display: inline-block;
       text-align: center;
-      font-size: 12px;
       width: 24%;
-      span {
-        font-size: 22px;
+      a {
+        font-size: 12px;
+        span {
+          font-size: 22px;
+        }
       }
     }
   }
