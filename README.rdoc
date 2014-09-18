@@ -1,28 +1,26 @@
 == README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+This repo is a collection of different ways to use bootstrap components to achieve the effect that you want.  These things are documented in more detail in the bootstrap-sass book, available at http://www.hfcacademy.com/bootstrap-sass/
 
-Things you may want to cover:
+The source for the book is available here:  https://github.com/hfc-tech-academy/bootstrap-sass
 
-* Ruby version
+= Layout
 
-* System dependencies
+Each example has a static html file, in app/views, and an isolated .scss file, in app/assets/stylesheets.  There should be no sharing across examples, other than the basic application layout.
 
-* Configuration
+= Making a new example
 
-* Database creation
+```bash
+$ rails g example component/type
+```
 
-* Database initialization
+Then you need to restart your server since we are adding a new file to the list of precompiled assets.
 
-* How to run the test suite
+This will
+- create a controller (if needed)
+- create the action
+- create the basic .scss file needed in the app/assets/stylesheets directory
+- add the stylesheet to the list of precompiled assets
+- add a route for the example
 
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
-
-
-Please feel free to use a different markup language if you do not plan to run
-<tt>rake doc:app</tt>.
+At this point you can fill out the html and .scss file, which will be independant of everything else.  Then send a pull request.  Ideally you should also update the bootstrap-sass book to explain what you have demonstrated.
