@@ -1,6 +1,48 @@
-@import url(http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,400,700,300,600);
-
-$font-family-sans-serif: 'Open Sans', "Helvetica Neue", Helvetica, Arial, sans-serif;
-
 @import 'bootstrap-sprockets';
 @import 'bootstrap';
+
+// So we can see what's going on
+body {
+  background: #aaa;
+}
+
+// Round the borders
+.dropdown-menu {
+  border-radius: 10px;
+  border: none;
+}
+
+// Add an arrow
+.dropdown-menu.arrow {
+  top: 45px;
+
+  &:before{
+    content: "";
+    position: absolute;
+    display: block;
+    width: 37px;
+    height: 12px;
+    top: -12px;
+    left: 66px;
+    background-image: image-url( 'dropdowns/arrow_top.png' );      
+  }
+}
+
+// Add CSS Transitions
+.open > .zoom.dropdown-menu {
+  -webkit-transform: scale(1, 1);
+  transform: scale(1, 1);  
+  
+}
+
+.zoom.dropdown-menu {
+  -webkit-transform-origin: top;
+  transform-origin: top;
+  -webkit-animation-fill-mode: forwards;  
+  animation-fill-mode: forwards; 
+  -webkit-transform: scale(0, 0);
+  display: block;
+  
+  transition: all 0.2s ease-out;
+  -webkit-transition: all 0.2s ease-out;
+}

@@ -8,7 +8,6 @@ Rails.application.config.assets.version = '1.0'
 Rails.application.config.assets.precompile += %w( navbars/fixed.css )
 Rails.application.config.assets.precompile += %w( dropdowns/basic.css )
 Rails.application.config.assets.precompile += %w( dropdowns/rounded.css )
-Rails.application.config.assets.precompile += %w( dropdowns/rounded_arrow.css )
 Rails.application.config.assets.precompile += %w( carousel/basic.css )
 Rails.application.config.assets.precompile += %w( carousel/full_width.css )
 Rails.application.config.assets.precompile += %w( carousel/controls.css )

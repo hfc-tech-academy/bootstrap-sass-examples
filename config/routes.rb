@@ -13,7 +13,6 @@ Rails.application.routes.draw do
   get 'carousel/controls'
   get 'carousel/full_width'
   get 'carousel/basic'
-  get 'dropdowns/rounded_arrow'
   get 'dropdowns/rounded'
   get 'dropdowns/basic'
   get 'navbars/fixed'

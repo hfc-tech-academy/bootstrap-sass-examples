@@ -5,7 +5,4 @@ class DropdownsController < ApplicationController
   def rounded
   end
 
-  def rounded_arrow
-  end
-
 end
