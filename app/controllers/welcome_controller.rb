@@ -12,9 +12,11 @@ class WelcomeController < ApplicationController
     title: "Nav Bars",
     documentation: "/bootstrap-sass/components/navbars.html",
     examples: [
-      [ "Sidebottom", "navbars/sidebottom", "/bootstrap-sass/components/sidebottom.html"]
+      [ "Sidebottom", "navbars/sidebottom", "/bootstrap-sass/components/sidebottom.html"],
+      [ "Sticky Footer", "footer/sticky" ]
     ]
   }
+
   def index
     @info = [ DROPDOWN_INFO, NAVBARS_INFO ]
   end
