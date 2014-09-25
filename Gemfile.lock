@@ -30,6 +30,8 @@ GEM
       tzinfo (~> 1.1)
     addressable (2.3.6)
     arel (5.0.1.20140414130214)
+    autoprefixer-rails (2.2.0.20140804)
+      execjs
     autotest-rails (4.2.1)
       ZenTest (~> 4.5)
     bootstrap-sass (3.2.0.0)
@@ -196,6 +198,7 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
+  autoprefixer-rails
   autotest-rails
   bootstrap-sass
   capybara

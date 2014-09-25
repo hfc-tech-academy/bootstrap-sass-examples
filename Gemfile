@@ -65,5 +65,6 @@ gem "rdiscount", groups: [:development, :test]
 gem "unicorn"
 gem "rails_12factor"
 gem "bootstrap-sass"
+gem 'autoprefixer-rails'
 gem "modernizr-rails"
 gem "meta-tags", require: "meta_tags"
