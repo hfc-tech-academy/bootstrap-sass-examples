@@ -1,0 +1,43 @@
+@import url(http://fonts.googleapis.com/css?family=Lato:300);
+@import url(http://fonts.googleapis.com/css?family=Playfair+Display:400,400italic);
+
+$font-family-base: 'Playfair Display', Georgia, "Times New Roman", Times, serif;
+$headings-font-family: 'Lato', "Helvetica Neue", Helvetica, Arial, sans-serif;
+
+@import 'bootstrap-sprockets';
+@import 'bootstrap';
+
+.jumbotron {
+  @include box-shadow(inset 5px 0px 10px rgba(0,0,0,.2));
+}
+
+html {
+  position: relative;
+  min-height: 100%;
+}
+
+body {
+  margin-bottom: 50px + 20px + 16px;
+}
+
+.footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  background: black;
+  color: white;
+  font-family: $headings-font-family;
+  font-size: 16px;
+  padding-top: 50px;
+  padding-bottom: 20px;
+
+  .left {
+    float: left;
+    padding-left: 15px;
+  }
+
+  .right {
+    float: right;
+    padding-right: 15px;
+  }
+}

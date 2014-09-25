@@ -1,0 +1,806 @@
+<!DOCTYPE HTML>
+<html lang="en-US" >
+    
+    <head>
+        
+        <meta charset="UTF-8">
+        <title>Layout | Bootstrap-sass on Rails</title>
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 1.0.3">
+        <meta name="HandheldFriendly" content="true"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+        <meta name="apple-mobile-web-app-capable" content="yes">
+        <meta name="apple-mobile-web-app-status-bar-style" content="black">
+        <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../gitbook/images/apple-touch-icon-precomposed-152.png">
+        <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
+        
+    
+    
+    
+    <link rel="next" href="../layout/grid.html" />
+    
+    
+    <link rel="prev" href="../setting_up/testing_the_install.html" />
+    
+
+        
+    </head>
+    <body>
+        
+        
+<link rel="stylesheet" href="../gitbook/style.css">
+
+
+        
+    <div class="book"  data-level="3" data-basepath=".." data-revision="1411666471204">
+    
+
+<div class="book-summary">
+    <div class="book-search">
+        <input type="text" placeholder="Type to search" class="form-control" />
+    </div>
+    <ul class="summary">
+        
+    	
+    	
+    	
+
+        
+
+        
+    
+        
+        <li class="chapter " data-level="0" data-path="index.html">
+            
+                
+                    <a href="../index.html">
+                        <i class="fa fa-check"></i>
+                        
+                         Introduction
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="1" data-path="map/README.html">
+            
+                
+                    <a href="../map/README.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.</b>
+                        
+                         Map
+                    </a>
+                
+            
+            
+            <ul class="articles">
+                
+    
+        
+        <li class="chapter " data-level="1.1" data-path="map/overview.html">
+            
+                
+                    <a href="../map/overview.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.1.</b>
+                        
+                         Overview
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="1.2" data-path="map/usage.html">
+            
+                
+                    <a href="../map/usage.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.2.</b>
+                        
+                         Usage
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="1.3" data-path="map/planning.html">
+            
+                
+                    <a href="../map/planning.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.3.</b>
+                        
+                         Planning
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="1.4" data-path="map/official_examples.html">
+            
+                
+                    <a href="../map/official_examples.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.4.</b>
+                        
+                         Official Examples
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="1.5" data-path="map/resources.html">
+            
+                
+                    <a href="../map/resources.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.5.</b>
+                        
+                         Resources
+                    </a>
+                
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="2" data-path="setting_up/README.html">
+            
+                
+                    <a href="../setting_up/README.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.</b>
+                        
+                         Setting Up
+                    </a>
+                
+            
+            
+            <ul class="articles">
+                
+    
+        
+        <li class="chapter " data-level="2.1" data-path="setting_up/manual_gem_install.html">
+            
+                
+                    <a href="../setting_up/manual_gem_install.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.1.</b>
+                        
+                         Direct gem install
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="2.2" data-path="setting_up/via_happyseed.html">
+            
+                
+                    <a href="../setting_up/via_happyseed.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.2.</b>
+                        
+                         via HappySeed
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="2.3" data-path="setting_up/testing_the_install.html">
+            
+                
+                    <a href="../setting_up/testing_the_install.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.3.</b>
+                        
+                         Testing The Install
+                    </a>
+                
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        
+        <li class="chapter active" data-level="3" data-path="layout/README.html">
+            
+                
+                    <a href="../layout/README.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.</b>
+                        
+                         Layout
+                    </a>
+                
+            
+            
+            <ul class="articles">
+                
+    
+        
+        <li class="chapter " data-level="3.1" data-path="layout/grid.html">
+            
+                
+                    <a href="../layout/grid.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.1.</b>
+                        
+                         Responsive Layout
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="3.2" data-path="layout/sematic_classes.html">
+            
+                
+                    <a href="../layout/sematic_classes.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.2.</b>
+                        
+                         Semantic Classes
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="3.3" data-path="layout/advanced_techniques.html">
+            
+                
+                    <a href="../layout/advanced_techniques.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.3.</b>
+                        
+                         Advanced Techniques
+                    </a>
+                
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="4" data-path="appearance/README.html">
+            
+                
+                    <a href="../appearance/README.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.</b>
+                        
+                         Appearance
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="5" data-path="components/README.html">
+            
+                
+                    <a href="../components/README.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>5.</b>
+                        
+                         Components
+                    </a>
+                
+            
+            
+            <ul class="articles">
+                
+    
+        
+        <li class="chapter " data-level="5.1" data-path="components/forms.html">
+            
+                
+                    <a href="../components/forms.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>5.1.</b>
+                        
+                         Forms
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="5.2" data-path="components/dropdowns.html">
+            
+                
+                    <a href="../components/dropdowns.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>5.2.</b>
+                        
+                         Dropdowns
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="5.3" data-path="components/collapse.html">
+            
+                
+                    <a href="../components/collapse.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>5.3.</b>
+                        
+                         Collapse
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="5.4" data-path="components/navbars.html">
+            
+                
+                    <a href="../components/navbars.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>5.4.</b>
+                        
+                         Navbars
+                    </a>
+                
+            
+            
+            <ul class="articles">
+                
+    
+        
+        <li class="chapter " data-level="5.4.1" data-path="components/official_examples.html">
+            
+                
+                    <a href="../components/official_examples.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>5.4.1.</b>
+                        
+                         Official Examples
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="5.4.2" data-path="components/sidebottom.html">
+            
+                
+                    <a href="../components/sidebottom.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>5.4.2.</b>
+                        
+                         Sidebottom
+                    </a>
+                
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="5.5" data-path="components/modal.html">
+            
+                
+                    <a href="../components/modal.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>5.5.</b>
+                        
+                         Modal
+                    </a>
+                
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="6" data-path="sample_app_shoutouts/README.html">
+            
+                
+                    <a href="../sample_app_shoutouts/README.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>6.</b>
+                        
+                         Sample App: Shoutouts
+                    </a>
+                
+            
+            
+            <ul class="articles">
+                
+    
+        
+        <li class="chapter " data-level="6.1" data-path="sample_app_shoutouts/footer.html">
+            
+                
+                    <a href="../sample_app_shoutouts/footer.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>6.1.</b>
+                        
+                         Footer
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="6.2" data-path="sample_app_shoutouts/pages.html">
+            
+                
+                    <a href="../sample_app_shoutouts/pages.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>6.2.</b>
+                        
+                         Home Page
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="6.3" data-path="sample_app_shoutouts/home_page_carousel.html">
+            
+                
+                    <a href="../sample_app_shoutouts/home_page_carousel.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>6.3.</b>
+                        
+                         Home Page Carousel
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="6.4" data-path="sample_app_shoutouts/home_page_signed_in.html">
+            
+                
+                    <a href="../sample_app_shoutouts/home_page_signed_in.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>6.4.</b>
+                        
+                         Home Page Signed In
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="6.5" data-path="sample_app_shoutouts/shoutout_features.html">
+            
+                
+                    <a href="../sample_app_shoutouts/shoutout_features.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>6.5.</b>
+                        
+                         Shoutout Features
+                    </a>
+                
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="7" data-path="bootstrap_reference/README.html">
+            
+                
+                    <a href="../bootstrap_reference/README.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>7.</b>
+                        
+                         Bootstrap Reference
+                    </a>
+                
+            
+            
+            <ul class="articles">
+                
+    
+        
+        <li class="chapter " data-level="7.1" data-path="bootstrap_reference/mixins.html">
+            
+                
+                    <a href="../bootstrap_reference/mixins.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>7.1.</b>
+                        
+                         mixins
+                    </a>
+                
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+
+        
+        <li class="divider"></li>
+        <li>
+            <a href="http://www.gitbook.io/" target="blank" class="gitbook-link">Published using GitBook</a>
+        </li>
+        
+    </ul>
+</div>
+
+    <div class="book-body">
+        <div class="body-inner">
+            <div class="book-header">
+    <!-- Actions Left -->
+    <a href="#" class="btn pull-left toggle-summary" aria-label="Toggle summary"><i class="fa fa-align-justify"></i></a>
+    <a href="#" class="btn pull-left toggle-search" aria-label="Toggle search"><i class="fa fa-search"></i></a>
+    
+    <div id="font-settings-wrapper" class="dropdown pull-left">
+        <a href="#" class="btn toggle-dropdown" aria-label="Toggle font settings"><i class="fa fa-font"></i>
+        </a>
+        <div class="dropdown-menu font-settings">
+    <div class="dropdown-caret">
+        <span class="caret-outer"></span>
+        <span class="caret-inner"></span>
+    </div>
+
+    <div class="buttons">
+        <button type="button" id="reduce-font-size" class="button size-2">A</button>
+        <button type="button" id="enlarge-font-size" class="button size-2">A</button>
+    </div>
+
+    <div class="buttons font-family-list">
+        <button type="button" data-font="0" class="button">Serif</button>
+        <button type="button" data-font="1" class="button">Sans</button>
+    </div>
+
+    <div class="buttons color-theme-list">
+        <button type="button" id="color-theme-preview-0" class="button size-3" data-theme="0">White</button>
+        <button type="button" id="color-theme-preview-1" class="button size-3" data-theme="1">Sepia</button>
+        <button type="button" id="color-theme-preview-2" class="button size-3" data-theme="2">Night</button>
+    </div>
+</div>
+
+    </div>
+
+    <!-- Actions Right -->
+    
+    <div class="dropdown pull-right">
+        <a href="#" class="btn toggle-dropdown" aria-label="Toggle share dropdown"><i class="fa fa-share-alt"></i>
+        </a>
+        <div class="dropdown-menu font-settings dropdown-left">
+            <div class="dropdown-caret">
+                <span class="caret-outer"></span>
+                <span class="caret-inner"></span>
+            </div>
+            <div class="buttons">
+                <button type="button" data-sharing="twitter" class="button">Twitter</button>
+                <button type="button" data-sharing="google-plus" class="button">Google</button>
+                <button type="button" data-sharing="facebook" class="button">Facebook</button>
+                <button type="button" data-sharing="weibo" class="button">Weibo</button>
+                <button type="button" data-sharing="instapaper" class="button">Instapaper</button>
+            </div>
+        </div>
+    </div>
+    
+
+    
+    <a href="#" target="_blank" class="btn pull-right google-plus-sharing-link sharing-link" data-sharing="google-plus" aria-label="Share on Google Plus"><i class="fa fa-google-plus"></i></a>
+    
+    
+    <a href="#" target="_blank" class="btn pull-right facebook-sharing-link sharing-link" data-sharing="facebook" aria-label="Share on Facebook"><i class="fa fa-facebook"></i></a>
+    
+    
+    <a href="#" target="_blank" class="btn pull-right twitter-sharing-link sharing-link" data-sharing="twitter" aria-label="Share on Twitter"><i class="fa fa-twitter"></i></a>
+    
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="../" >Bootstrap-sass on Rails</a>
+    </h1>
+</div>
+
+            <div class="page-wrapper" tabindex="-1">
+                <div class="page-inner">
+                
+                
+                    <section class="normal" id="section-gitbook_215">
+                    
+                        <h1 id="layout">Layout</h1>
+<p>Bootstrap provides a number of tools to build out your site, including the grid system, prebuilt components, standardized buttons and alerts, and various mixins that you can use in your SASS.  The most commonly used is the grid system for laying out pages.</p>
+<p>The grid system (some interesting history here <a href="http://www.smashingmagazine.com/2009/07/17/lessons-from-swiss-style-graphic-design/" target="_blank">http://www.smashingmagazine.com/2009/07/17/lessons-from-swiss-style-graphic-design/</a> ) refers to a style of designing pages where you lay out your elements on a horizontal grid, or equally sized horizontal columns.
+You place the left side of every component at the left side of a column, and the right side of every component on the right side of a column.
+You can span as many columns as you like, but the left side of all columns will &quot;line up&quot; with the left side of other columns.  The span in between columns is called the gutter, so if you have, for example text, in adjacent columns there will be a space between them. Here&#39;s the framework of an <code>lg</code> grid (more on that later):</p>
+<p><img src="images/lg_grid.jpg" alt="Grid"></p>
+<p>That lays things out horizontally and the height of the component is determined by the amount of content in it.  The way that the typography is set up (meaning the font faces, font sizes, margins, padding and line-height of the various elements) will also give you a good vertical visual rythm.</p>
+<p>You decide the left-to-right-ness of your design, and the content decides how tall it needs to be.  It is a simple way of creating visual harmony on the site.</p>
+<p>By default, the grid system of bootstrap has 12 columns, and the gutter width is 30px.  These can be changed with the <code>$grid-columns</code> and <code>$grid-gutter-width</code> varibles.</p>
+<p>All columns need to be in a <code>row</code>, which in turn needs to be in either a <code>container</code> or a <code>container-fluid</code>.  A <code>row</code> specifies a group of columns.  The columns get layed out left to right, and they will wrap to the next line if the total is more than 12 (or <code>$grid-columns</code>).  Columns will never be split up - never get hyphonated like words might - so you may have empty space where the column doesn&#39;t fit, in the same way that word wrapping works in a document.</p>
+<p>If you want to introduce white space in a layout, this can be done by using an <em>offset</em> column. This is very much like empty content but responds differently if the browser window is smaller, for example, when people are viewing your site on a mobile browser.</p>
+<p>A <code>container</code> or <code>container-fluid</code> defines the overall margins of the site at various sizes.  <code>container</code> has a fixed width at each screen size, so if you resize a window you will see the margins snap to different sizes. <code>container-fluid</code> tries to use as much space as possible, so when you change the window size the columns grow and shrink <em>fluidly</em>.</p>
+<p>In some sense, you don&#39;t know the &quot;actual width&quot; of the columns.  There are 12 of them, but depending upon the window size, if it&#39;s in a <code>container</code> or <code>container-fluid</code>, the actual size of the columns will vary.  The design of the page needs to take this into account.</p>
+<p>Lets look at some examples, which were designed with a 12 column grid:</p>
+<p><img src="images/magazine.jpg" alt="Magazine"></p>
+<p>Can you see the grid?</p>
+<p><img src="images/lg_grid_magazine.jpg" alt="Magazine Grid"></p>
+<p>In the above image, the &quot;columns&quot; themselves are in light blue, and the &quot;content&quot; part of the column doesn&#39;t touch.  The space in between is called the &quot;gutter&quot; and is used to split out space.  However, if your design element spans multiple columns, the gutter space is only added to the either side.</p>
+<p>This example has a header at top, where the brand logo is 2 across and the links to the different sections are centered in the the remaining column.  (So while the design component fits to the columns, the content within it doesn&#39;t reach the edge.)  The carosel navigation is 2-8-2, the main content area is 1-10-1, and the pagination is 3-6-3.</p>
+<h2 id="numerology-aside">Numerology Aside</h2>
+<p>When it comes to measurement units, the USA is a bit of a laughing stock still using some weirdo &quot;Imperial Measurement&quot; system rather than the more rationalized Metric System.  The metric system is a steely eyed homage to the phase change of water, a bar of metal in Paris, and the number ten, and is more &quot;Rational&quot;.  Handy if you care how many millimeters are in a kilometer but, honestly, 10 actually sucks as a number.</p>
+<p>Except in the case where you want to easily move a decimal place right or left, or use fingers as a arthimetical device, 10 is not a very useful number.  If you have 10 things, and want to share them equally with 2 people, no problem.  Share them with 3 people?  4?  Not possible, you either have 1 or 2 left over.  The prime factors of 10 are 2 and 5, so those are the only way to split it up evenly -- give 2 people 5 things, or 5 people 2 things.</p>
+<p>12 -- the number of inches in a foot, or the number of hours in a day -- is a much better number, since it&#39;s prime factors are 2, 2, 3.  To spell out the options:</p>
+<ul>
+<li>2 x 2 x 3 = 12</li>
+<li>(2 x 2) x 3 = 4 x 3 = 12</li>
+<li>2 x (2 x 3) = 2 x 6 = 12</li>
+</ul>
+<p>This gives you a lot more options for splitting up things evenly:</p>
+<ul>
+<li>If you want to split your design in half: 6 columns, and 6 columns.</li>
+<li>If you want to lay out your page in 3 equal parts: 4 columns, 4 columns, and 4 columns.</li>
+<li>If you want to lay out your page in 4 equal parts: 3 columns, 3 columns, 3 columns, and 3 columns.</li>
+</ul>
+<p>You can&#39;t split it evenly into 5 columns.  If you multiply 5 x 12 to get a number you can split into five parts you get 60, which you&#39;ll notice as the number of minutes in an hour.  And that&#39;s why you can split an hour into half (30 mins), thirds (20 mins), fourths (15 mins), fifths (12 mins), and sixths (10 mins).</p>
+<p>Keep in mind how awesome 12 is if you are itching to redefine the number of columns there are in the bootstrap grid.</p>
+<h2 id="how-would-i-lay-this-out">How would I lay this out?</h2>
+<p>The top row has a 2 column logo, 1 column offset, and an 8 column content area.  That would like:</p>
+<pre><code class="lang-html"><span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"row"</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"col-md-2"</span>&gt;</span>
+    Logo
+  <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+
+  <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"col-md-offset-1 col-md-8 centered"</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-title">p</span>&gt;</span>Whole bunch of icons<span class="hljs-tag">&lt;/<span class="hljs-title">p</span>&gt;</span>
+  <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-title">div</span>&gt;</span>
+</code></pre>
+<p><code>col-md-2</code> and <code>col-md-8</code> specific the content, while the <code>col-md-offset-1</code> is added to the class to shift it over.  On smaller screens, this offset won&#39;t take effect.</p>
+<p>The next area is 2 columns, 8 columns, and 2 columns:</p>
+<pre><code class="lang-html">      <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"row"</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"col-xs-2"</span>&gt;</span>
+          Left Arrow
+        <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+
+        <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"col-xs-8"</span>&gt;</span>
+          Carousel Main
+        <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+
+        <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"col-xs-2"</span>&gt;</span>
+          Right Arrow
+        <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+      <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+</code></pre>
+<p>Here I&#39;m using the <code>col-xs-</code> classes to make sure that, even on the smallest device, the columns are always horizontally layed out.  (We&#39;ll get to this in the next section.)</p>
+<p>Can you figure out how the rest of the page is done?  Think about it, and here&#39;s a <a href="examples/magazine1.html" target="_blank">basic outline with a border around each out of content containers</a>.</p>
+<h2 id="what-happens-if-my-column-sizes-add-up-to-more-than-12">What happens if my column sizes add up to more than 12?</h2>
+<p>There are two different scenarios:</p>
+<p>Things get layed out left to right, and when the number of columns in a <code>&lt;div class=&quot;row&quot;&gt;</code> exceed 12, they wrap around.  The column doesn&#39;t get split, so if there are 3 columns, each <code>col-md-5</code>, the first two will be right to left, there will be a space on the right of 2, and the third column will be below.</p>
+<p>In this situation, things get packed in as they can.  If you want to force a split between them, use a <code>&lt;div class=&quot;clearfix&quot;&gt;</code> which will force everything to be stacked.</p>
+<p>The other scenario is when you have a <code>row</code> inside of a <code>col</code>.  What?  This is a situation where you want to have a seperate grid inside of an existing grid, and you&#39;ll find that the math above comes in handy.  In this case, each time you create a <code>row</code> you get another &quot;12 columns&quot;, but <em>12 columns inside of the parent column</em>!</p>
+
+                    
+                    </section>
+                
+                
+                </div>
+            </div>
+        </div>
+
+        
+        <a href="../setting_up/testing_the_install.html" class="navigation navigation-prev " aria-label="Previous page: Testing The Install"><i class="fa fa-angle-left"></i></a>
+        
+        
+        <a href="../layout/grid.html" class="navigation navigation-next " aria-label="Next page: Responsive Layout"><i class="fa fa-angle-right"></i></a>
+        
+    </div>
+</div>
+
+        
+<script src="../gitbook/app.js"></script>
+
+    
+    <script src="https://cdn.mathjax.org/mathjax/2.4-latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    
+
+    
+    <script src="../gitbook/plugins/gitbook-plugin-mathjax/plugin.js"></script>
+    
+
+<script>
+require(["gitbook"], function(gitbook) {
+    var config = {"fontSettings":{"theme":null,"family":"sans","size":2}};
+    gitbook.start(config);
+});
+</script>
+
+        
+    </body>
+    
+</html>

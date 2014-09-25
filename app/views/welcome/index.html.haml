@@ -1,0 +1,37 @@
+.container-fluid
+  .row
+    .jumbotron
+      %h1.text-center Bootstrap Sass Examples
+      %p
+        Example code that goes with
+        = link_to "the bootstrap-sass book,", "/bootstrap-sass/"
+        showing how to do specific things with bootstrap-sass on rails.
+
+  .row
+    - @info.each do |i|
+      .col-sm-4
+        %h2=i[:title]
+        %p= link_to "Read the book chapter", i[:documentation]
+        %table.table.table-striped.table-bordered
+          %tr
+            %th Live
+            %th HTML
+            %th SCSS
+          - i[:examples].each do |ex|
+            %tr
+              %td
+                = link_to ex[0], ex[1]
+                - if ex[2]
+                  = link_to "(docs)", ex[2]
+              %td= link_to "HTML", "https://github.com/hfc-tech-academy/bootstrap-sass-examples/blob/master/app/views/#{ex[1]}.html"
+              %td= link_to "SCSS", "https://github.com/hfc-tech-academy/bootstrap-sass-examples/blob/master/app/assets/stylesheets/#{ex[1]}.css.scss"
+
+%footer.footer
+  .container-fluid
+    .row
+      %p.left
+        A
+        = link_to "HappyFunCorp", "http://happyfuncorp.com"
+        production
+      %p.right
+        Lovingly made in Brooklyn.

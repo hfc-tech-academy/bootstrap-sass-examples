@@ -1,5 +1,4 @@
 Rails.application.routes.draw do
-
   get 'badges/cornered'
   get 'badges/basic'
   get 'breadcrumbs/styled'
@@ -16,5 +15,5 @@ Rails.application.routes.draw do
   get 'dropdowns/rounded'
   get 'dropdowns/basic'
   get 'navbars/fixed'
-  root 'setup#index'
+  root 'welcome#index'
 end
