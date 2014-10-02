@@ -7,7 +7,7 @@
         <title>Dropdowns | Bootstrap-sass on Rails</title>
         <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
         <meta name="description" content="">
-        <meta name="generator" content="GitBook 1.0.3">
+        <meta name="generator" content="GitBook 1.1.0">
         <meta name="HandheldFriendly" content="true"/>
         <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
         <meta name="apple-mobile-web-app-capable" content="yes">
@@ -33,7 +33,7 @@
 
 
         
-    <div class="book"  data-level="5.2" data-basepath=".." data-revision="1411666471204">
+    <div class="book" data-level="5.2" data-basepath=".." data-revision="1412271485481">
     
 
 <div class="book-summary">
@@ -691,7 +691,7 @@
                 <div class="page-inner">
                 
                 
-                    <section class="normal" id="section-gitbook_208">
+                    <section class="normal" id="section-gitbook_7">
                     
                         <h1 id="dropdowns">Dropdowns</h1>
 <ul>
@@ -759,19 +759,23 @@ body {
 <p>This looks good, but it lacking a little pizzaz.  Let&#39;s add some CSS3 transitions so that the menu zooms out.  We&#39;ll do this by adding an additional CSS class called `zoom.</p>
 <pre><code class="lang-css">// Add CSS Transitions
 .open &gt; .zoom.dropdown-menu {
+  -webkit-transform: scale(1, 1);
   transform: scale(1, 1);
+
 }
 
 .zoom.dropdown-menu {
+  -webkit-transform-origin: top;
   transform-origin: top;
+  -webkit-animation-fill-mode: forwards;
   animation-fill-mode: forwards;
-  transform: scale( 0, 0 );
+  -webkit-transform: scale(0, 0);
   display: block;
 
-  transition: all 0.2s cubic-bezier(0.175, 0.885, 0.320, 1.3);
+  transition: all 0.2s ease-out;
+  -webkit-transition: all 0.2s ease-out;
 }
 </code></pre>
-<p>The autoprefixer-rails will take care of adding the addition rules as needed.  What this does is for the for the default dropdown state (<em>i.e. closed</em>) it uses CSS to scale the element to 0.  It&#39;s &quot;displayed&quot; on the page, but zero size.  Then, when the <code>.open</code> class is added, it scales it back to full size, but the using the <code>transition</code> rules defined below.</p>
 <p>That&#39;s all there is to it!</p>
 
                     
