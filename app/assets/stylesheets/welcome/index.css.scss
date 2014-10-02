@@ -31,6 +31,11 @@ body {
   padding-top: 50px;
   padding-bottom: 20px;
 
+  @media (max-width: $screen-sm-min) {
+    padding-top: 20px;
+    padding-bottom: 5px;
+  }
+
   .left {
     float: left;
     padding-left: 15px;

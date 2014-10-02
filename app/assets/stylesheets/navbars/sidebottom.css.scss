@@ -19,6 +19,8 @@
   }
 
   @media (max-width: $screen-sm-min) {
+    padding-left: 0;
+    padding-right: 0;
     background: white;
     position: fixed;
     bottom: 0;
@@ -42,16 +44,17 @@
 
 @media (max-width: $screen-sm-min) {
   body {
-    padding-top: 50px;
+    padding-top: 20px;
     padding-bottom: 26px;
   }
 
   nav {
     background: white;
+    min-height: 20px !important;
     h1 {
       padding-top: 0px;
       margin-top: 5px;
-
+      font-size: 12px;
     }
   }
 }
