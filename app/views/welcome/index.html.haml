@@ -8,6 +8,15 @@
         showing how to do specific things with bootstrap-sass on rails.
 
   .row
+    .col-sm-6.col-md-4
+      %h2 Table of Contents
+      %ol
+        %li= link_to "Introduction", "/bootstrap-sass/index.html"
+        %li= link_to "Map", "/bootstrap-sass/map/README.html"
+        %li= link_to "Setting up", "/bootstrap-sass/setting_up/README.html"
+        %li= link_to "Layout", "/bootstrap-sass/layout/README.html"
+        %li= link_to "Appearance", "/bootstrap-sass/appearance/README.html"
+        %li= link_to "Components", "/bootstrap-sass/components/README.html"
     - @info.each do |i|
       .col-sm-6.col-md-4
         %h2=i[:title]
