@@ -9,7 +9,7 @@
 
   .row
     - @info.each do |i|
-      .col-sm-4
+      .col-sm-6.col-md-4
         %h2=i[:title]
         %p= link_to "Read the book chapter", i[:documentation]
         %table.table.table-striped.table-bordered
@@ -26,6 +26,12 @@
               %td= link_to "HTML", "https://github.com/hfc-tech-academy/bootstrap-sass-examples/blob/master/app/views/#{ex[1]}.html"
               %td= link_to "SCSS", "https://github.com/hfc-tech-academy/bootstrap-sass-examples/blob/master/app/assets/stylesheets/#{ex[1]}.css.scss"
 
+  .row
+    .col-sm-12
+      %p
+        All of the code can be found in our
+        = link_to "Github Repo", "https://github.com/hfc-tech-academy/bootstrap-sass-examples"
+        
 %footer.footer
   .container-fluid
     .row
