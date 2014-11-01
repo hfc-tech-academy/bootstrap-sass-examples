@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  get 'grid/custom'
   get 'footer/sticky'
   get 'badges/cornered'
   get 'badges/basic'

@@ -8,6 +8,14 @@ class WelcomeController < ApplicationController
     ]
   }
 
+  GRID_INFO = {
+    title: "Grid",
+    documentation: "/bootstrap-sass/layout/README.html",
+    examples: [
+      [ "Custom", "grid/custom", "/bootstrap-sass/layout/advanced_techniques.html" ]
+    ]
+  }
+
   NAVBARS_INFO = {
     title: "Nav Bars",
     documentation: "/bootstrap-sass/components/navbars.html",
@@ -18,6 +26,6 @@ class WelcomeController < ApplicationController
   }
 
   def index
-    @info = [ DROPDOWN_INFO, NAVBARS_INFO ]
+    @info = [ GRID_INFO, NAVBARS_INFO, DROPDOWN_INFO ]
   end
 end

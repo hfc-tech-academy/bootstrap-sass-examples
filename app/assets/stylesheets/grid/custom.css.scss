@@ -1,0 +1,33 @@
+@import 'bootstrap-sprockets';
+@import 'bootstrap';
+
+.outline {
+  border: 1px solid black;
+  min-height: 80px;
+  padding-top: 30px;
+  // padding-bottom: 50px;
+  padd-left: 20px;
+}
+
+.main_body {
+  @include make-row();
+  .sidebar {
+    @include make-sm-column( 2 );
+  }
+  .main_content {
+    @include make-sm-column( 10 );
+  }
+  $grid-columns: 10;
+  .item {
+    @include make-row();
+    .avatars {
+      @include make-sm-column( 2 );
+      @include make-md-column( 3 );
+    }
+    .content {
+      @include make-sm-column( 8 );
+      @include make-md-column( 7 );
+    }
+  }
+  $grid-columns: 12;
+}
